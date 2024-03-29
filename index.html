@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./Resources/favicon.png" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Ketan - Childcare & Kids School Website</title>
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="min-h-screen w-full">
+  <!-- NAV Desktop -->
+  <nav class="hidden sm:flex h-[10vh] w-[70%] mx-auto items-center justify-between">
+    <div class="logo basis-24"><a href="#"><img src="./Resources/logo.png" alt="logo" /></a></div>
+    <ul class="flex gap-[6vw] font-semibold">
+      <li class="hover:text-orange-600 transition-all ease-in-out duration-600 cursor-pointer"><a href="#">Home</a></li>
+      <li class="hover:text-orange-600 transition-all ease-in-out duration-600 cursor-pointer"><a href="#who-we-are">About</a></li>
+      <li class="hover:text-orange-600 transition-all ease-in-out duration-600 cursor-pointer"><a href="#classes">Product</a></li>
+      <li class="hover:text-orange-600 transition-all ease-in-out duration-600 cursor-pointer"><a href="#footer">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- NAV MOBILE -->
+  <nav class="sm:hidden flex justify-between items-center relative p-4 h-[12vh] mx-auto">
+    <div class="logo"><img src="./Resources/logo.png" alt="logo"></div>
+    <div class="ham h-full flex flex-col justify-center items-center">
+      <div class="w-4 h-0.5 bg-black m-0.5"></div>
+      <div class="w-4 h-0.5 bg-black m-0.5"></div>
+      <div class="w-4 h-0.5 bg-black m-0.5"></div>
+      <ul class="absolute hidden text-lg font-semibold bg-zinc-200 p-10 top-20 translate-y-2 right-0 z-10 space-y-8 rounded-lg">
+        <li class="hover:text-red-500 cursor-pointer"><a href="#">Home</a></li>
+        <li class="hover:text-red-500 cursor-pointer"><a href="#who-we-are">About</a></li>
+        <li class="hover:text-red-500 cursor-pointer"><a href="#classes">Product</a></li>
+        <li class="hover:text-red-500 cursor-pointer"><a href="#footer">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Home Container -->
+  <main class="flex flex-col lg:flex-row lg:flex h-full w-full lg:overflow-hidden bg-[#f1e7ffff] justify-center" >
+    <div
+      class="hero flex relative items-center w-full flex-col  h-full ">
+      <div class="img hidden md:block">
+        <img src="./Resources/banner-shape-1.png" alt="Image-1" class="absolute top-[30px] animate-bounce left-0 w-20" />
+        <img src="./Resources/banner-shape-2.png" alt="Image-2" class="absolute top-[30px] right-0 w-20 animate-bounce" />
+        <img src="./Resources/banner-shape-3.png" alt="Image-3" class="absolute w-20 animate-bounce bottom-0 left-0 z-10" />
+        <img src="./Resources/banner-shape-4.png" alt="Image-4" class="absolute bottom-[-118px]  right-0 w-20" />
+      </div>
+      <div class="flex flex-col h-full items-center justify-center lg:items-start p-8 lg:pt-28 lg:px-28 gap-4">
+        <p class="text-red-500 font-bold">Play, Learn and Grow</p>
+        <h3 class="text-[1.6rem] lg:text-[2rem] text-[#1b0238] font-bold">
+          Empowering Student Knowledge
+        </h3>
+        <p class="text-center lg:text-start lg:text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eos
+        numquam laboriosam, eveniet optio blanditiis iste facilis odit, illo
+        officia sed aspernatur dignissimos corporis accusantium quae, aperiam
+        reprehenderit dolorem eius.
+      </p>
+    </div>
+      <div class="button flex gap-4 items-center  lg:justify-start  justify-center w-full lg:px-28  mb-4 lg:mb-0">
+        <button class="p-4 text-sm  rounded-xl bg-red-600 hover:bg-orange-600 transition-all ease-in-out duration-300 text-white">
+         <a href="#who-we-are"> Learn More</a>
+        </button>
+        <button class="p-4 text-sm hover:bg-orange-600 transition-all ease-in-out duration-300   rounded-xl bg-orange-600 text-white">
+         <a href="#Latest-News"> Find Out More </a>
+        </button>
+      </div>
+    </div>
+    <div class="circle lg:min-h-[90vh] relative w-full lg:w-[70vw] lg:rounded-l-full lg:bg-[#fef8f8] bg-[#f1e7ffff] flex">
+      <img src="./Resources/education-girl.png" alt="banner_photo" class="lg:absolute bottom-0 right-24 min-w-sm"/>
+    </div>
+
+    <img src="./Resources/banner-bg-shape-1.png" alt="cloud" class="lg:absolute lg:bottom-[-70px] lg:left-0 hidden lg:block" />
+  </main>
+  <!-- First Section -->
+  <section
+    class="flex flex-col top-[30vh] md:top-0 min-[800px]:flex-row p-[2rem] gap-[3rem] items-center justify-center" id="who-we-are">
+    <div class="left">
+      <img src="./Resources/who-we-are.jpg" alt="section2_img" class="rounded-full object-cover"/>
+    </div>
+    <div class="right relative flex flex-col gap-[1.4rem]">
+      <img src="./Resources/who-we-are-shape.png" alt="section_2_shape"
+        class="w-20 absolute hidden md:block top-0 right-[-5px]" />
+      <span class="text-red-500 font-bold">Who We Are</span>
+      <h1 class="text-[2rem] md:text-[3rem] font-semibold">
+        Kindergarten and Childhood is Our Passion
+      </h1>
+      <p class="sm:text-[1.2rem] font-light">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+        doloribus debitis dolorem fuga ea accusantium a beatae tenetur
+        adipisci placeat, eos maxime laudantium nihil dolores voluptatum
+        aliquam amet ab et.
+      </p>
+      <ul class="sm:grid sm:grid-cols-2 space-y-8 sm:space-y-0 gap-[2rem] mb-4">
+        <li class="font-semibold">
+          <span class="text-white px-3 py-2 font-bold rounded-full bg-orange-600">1</span>
+          Home like Environment
+        </li>
+        <li class="font-semibold">
+          <span class="text-white px-3 py-2 font-bold rounded-full bg-orange-600">2</span>
+          Quality Educators
+        </li>
+        <li class="font-semibold">
+          <span class="text-white px-3 py-2 font-bold rounded-full bg-orange-600">3</span>
+          Safety and Security
+        </li>
+        <li class="font-semibold">
+          <span class="text-white px-3 py-2 font-bold rounded-full bg-orange-600">4</span>
+          Play and Learn
+        </li>
+      </ul>
+      <div class="btn">
+        <button class="p-4 bg-red-600 text-white font-bold text-sm hover:bg-orange-600 transition-all ease-in-out duration-300  rounded-xl">
+         <a href="#our-core-values"> Read More </a>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Second-Section -->
+  <section class="h-full w-full py-10 bg-[#fdf6ed]" id="classes">
+    <div class="head p-4">
+      <p class="text-[#ea512e] text-center font-bold">classes</p>
+      <h1 class="text-center font-bold text-4xl p-4">Popular Classes</h1>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 place-items-center gap-8 p-4 md:px-20">
+      <div class="card rounded-lg w-full h-full md:max-w-sm bg-white">
+        <div class="overflow-hidden">
+          <img src="./Resources/class-1.jpg" alt="class-Image"
+            class="hover:scale-110 rounded-t-lg hover:rotate-20 transition-all ease-in-out duration-500" />
+        </div>
+        <div class="text p-4 flex relative flex-col gap-6">
+          <span
+            class="bg-orange-600 p-2 text-white text-md font-bold rounded-l flex absolute top-0 right-0 z-10">$880</span>
+          <h2 class="hover:text-orange-600 cursor-pointer font-bold text-xl">
+            Color Matching
+          </h2>
+          <p class="text-zinc-600">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <hr style="border-top: dotted 1px; color: #ea512e" />
+          <div class="details font-semibold items-center text-sm flex gap-4">
+            <p class="text-orange-600">
+              Age: <span class="text-black">3-5 Year</span>
+            </p>
+            <p class="text-orange-600">
+              Time: <span class="text-black">8-10 Am</span>
+            </p>
+            <p class="text-orange-600">
+              Seat: <span class="text-black">25</span>
+            </p>
+          </div>
+          <button
+            class="text-start px-6 py-3 font-semibold bg-orange-600 w-fit rounded-xl text-white hover:bg-orange-700 transition-all ease-in-out duration-500">
+           <a href="#events">Join class</a> 
+          </button>
+        </div>
+      </div>
+      <div class="card rounded-lg w-full h-full md:max-w-sm bg-white">
+        <div class="overflow-hidden">
+          <img src="./Resources/class-2.jpg" alt="class-Image"
+            class="hover:scale-110 rounded-t-lg hover:rotate-20 transition-all ease-in-out duration-500" />
+        </div>
+        <div class="text p-4 flex flex-col gap-6 relative">
+          <span
+            class="bg-orange-600 p-2 text-white text-md font-bold rounded-l flex absolute top-0 right-0 z-10">$790</span>
+          <h2 class="hover:text-orange-600 cursor-pointer font-bold text-xl">
+            Learning Disciplines
+          </h2>
+          <p class="text-zinc-600">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <hr style="border-top: dotted 1px; color: #ea512e" />
+          <div class="details font-semibold items-center text-sm flex gap-4">
+            <p class="text-orange-600">
+              Age: <span class="text-black">3-5 Year</span>
+            </p>
+            <p class="text-orange-600">
+              Time: <span class="text-black">8-10 Am</span>
+            </p>
+            <p class="text-orange-600">
+              Seat: <span class="text-black">25</span>
+            </p>
+          </div>
+          <button
+            class="text-start px-6 py-3 font-semibold bg-orange-600 w-fit rounded-xl text-white hover:bg-orange-700 transition-all ease-in-out duration-500">
+           <a href="#events">Join class</a> 
+          </button>
+        </div>
+      </div>
+      <div class="card rounded-lg w-full h-full md:max-w-sm bg-white">
+        <div class="overflow-hidden">
+          <img src="./Resources/class-3.jpg" alt="class-Image"
+            class="hover:scale-110 rounded-t-lg hover:rotate-20 transition-all ease-in-out duration-500" />
+        </div>
+        <div class="text p-4 flex flex-col gap-6 relative">
+          <span
+            class="bg-orange-600 p-2 text-white text-md font-bold rounded-l flex absolute top-0 right-0 z-10">$590</span>
+          <h2 class="hover:text-orange-600 cursor-pointer font-bold text-xl">
+            Drawing
+          </h2>
+          <p class="text-zinc-600">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <hr style="border-top: dotted 1px; color: #ea512e" />
+          <div class="details font-semibold items-center text-sm flex gap-4">
+            <p class="text-orange-600">
+              Age: <span class="text-black">3-5 Year</span>
+            </p>
+            <p class="text-orange-600">
+              Time: <span class="text-black">8-10 Am</span>
+            </p>
+            <p class="text-orange-600">
+              Seat: <span class="text-black">25</span>
+            </p>
+          </div>
+          <button
+            class="text-start px-6 py-3 font-semibold bg-orange-600 w-fit rounded-xl text-white hover:bg-orange-700 transition-all ease-in-out duration-500">
+           <a href="#events">Join class</a> 
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Third Section -->
+  <section class="h-full w-full relative md:p-12  flex items-center justify-center" id="our-core-values">
+    <span class="hidden md:block absolute top-8 left-8"><img src="./Resources/value-shape-1.png" alt="Sun-shape"></span>
+    <span class="hidden md:block absolute right-0 -z-10"><img src="./Resources/value-shape-3.png" alt="smiley"></span>
+    <span class="hidden md:block  absolute bottom-4 left-4 -z-10"><img src="./Resources/value-shape-2.png" alt="pencil"></span>
+    <div class="flex h-full w-full items-center justify-center p-4 my-8 flex flex-wrap gap-8 md:flex-nowrap">
+      <div class="left md:w-[50%] h-full w-full ">
+        <img src="./Resources/value-1.png" alt="third-image" class="w-full h-full md:p-8" />
+      </div>
+      <div class="right md:w-[50%] w-full flex flex-col gap-3 md:gap-6">
+        <span class="text-orange-600 font-bold">Our Core Values</span>
+        <h1 class="md:text-4xl text-2xl font-bold">
+          We are Refunding Early Childcare Education
+        </h1>
+        <div class="box-Container items-center justify-center flex flex-col gap-4">
+          <div class="box relative p-2 group gap-6 flex items-center  ">
+            <span
+              class="bg-[#d3f5fe] rounded-full  px-7 py-6 
+                md:px-5 md:py-4 flex group-hover:bg-orange-600 group-hover:text-white transition-all ease-in-out duration-500 items-center font-semibold justify-center">01</span>
+            <span class="absolute border size-[63px] -translate-x-1 m-0 rounded-full -z-10 "></span>
+            <div class="text flex flex-col gap-2">
+              <h2 class="font-semibold text-2xl ">Active Learning</h2>
+              <p class="text-gray-500 text-sm">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Neque, inventore! Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Neque, inventore!
+              </p>
+            </div>
+          </div>
+          <div class="box relative group p-2 gap-6 flex items-center">
+            <span
+              class="bg-[#fce0ad] rounded-full px-7 py-6 md:px-5 md:py-4 flex items-center font-semibold justify-center group-hover:bg-orange-600 group-hover:text-white transition-all ease-in-out duration-500 ">02</span>
+            <span class="absolute border size-[82px] md:size-[66px] -translate-x-1 m-0 rounded-full -z-10 "></span>
+            <div class="text flex flex-col gap-2">
+              <h2 class="font-semibold text-2xl ">Safe Environment</h2>
+              <p class="text-gray-500 text-sm">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Neque, inventore! Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Neque, inventore!
+              </p>
+            </div>
+          </div>
+          <div class="box p-2 gap-6 group flex items-center">
+            <span
+              class="bg-[#fbc9d5] rounded-full px-7 py-6 flex items-center md:px-5 md:py-4 font-semibold justify-center group-hover:bg-orange-600 group-hover:text-white transition-all ease-in-out duration-500">03</span>
+            <span class="absolute border size-[82px] md:size-[66px] -translate-x-1 m-0 -z-10 rounded-full"></span>
+            <div class="text  flex flex-col gap-2">
+              <h2 class="font-semibold text-2xl ">Fully Equipment</h2>
+              <p class="text-gray-500 text-sm">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Neque, inventore! Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Neque, inventore!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Fourth-Section -->
+  <section
+    class="h-full w-full bg-[url('./Resources/teacher-bg.jpg')] bg-contain bg-no-repeat bg-cover flex flex-col bg-center items-center gap-4 py-12">
+    <span class="text-orange-600 font-bold">Our Core Teacher</span>
+    <h1 class="text-4xl font-bold">Meet Our Teacher</h1>
+    <div class="card-container w-full flex  h-full flex-wrap lg:flex-nowrap justify-evenly items-center mt-8 gap-8 lg:gap-4 relative">
+      <div class="card w-72 space-y-4 flex flex-col items-center justify-center ">
+          <img src="./Resources/teacher-1.jpg" alt="teacher-1" class="rounded-full">   
+       <div class="text text-center flex flex-col gap-2">
+          <p class="font-bold text-4xl">Glims Bond</p>
+          <span class="text-orange-600 font-semibold">Music Teacher</span>
+        </div>
+      </div>
+      <div class="card2 w-72 space-y-4 ">
+          <img src="./Resources/teacher-2.jpg" alt="teacher-2" class="rounded-full">
+        <div class="text text-center flex flex-col gap-2">
+          <p class="font-bold text-4xl">Sherlock Bin</p>
+          <span class="text-orange-600 font-semibold">Art Teacher</span>
+        </div>
+      </div>
+      <div class="card w-72 space-y-4 ">
+        <img src="./Resources/teacher-3.jpg" alt="teacher-3" class="rounded-full">
+        <div class="text text-center flex flex-col gap-2">
+          <p class="font-bold text-4xl">Pristly Herbart</p>
+          <span class="text-orange-600 font-semibold">Math Teacher</span>
+        </div>
+        <ul
+          class="absolute translate-y-10 group-hover:translate-y-0 transition-all ease-in-out duration-500  group-hover:z-10 -z-10 top-48 left-10 gap-4 flex">
+          <li><i class="ri-facebook-circle-fill bg-orange-600 text-white px-3 py-3 rounded-full"></i></li>
+          <li><i class="ri-instagram-fill bg-orange-600 text-white px-3 py-3 rounded-full"></i></li>
+          <li><i class="ri-twitter-fill bg-orange-600 text-white px-3 py-3 rounded-full"></i></li>
+          <li><i class="ri-linkedin-fill bg-orange-600 text-white px-3 py-3 rounded-full"></i></li>
+        </ul>
+      </div>
+      <div class="card w-72 space-y-4">
+        <img src="./Resources/teacher-4.jpg" alt="teacher-4" class="rounded-full">
+        <div class="text text-center flex flex-col gap-2">
+          <p class="font-bold text-4xl">Smith Broke</p>
+          <span class="text-orange-600 font-semibold">English Teacher</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fifth-Section -->
+  <section class="h-full w-full flex bg-[url(./Resources/event-bg.jpg)] bg-center bg-cover justify-center p-8"  id="events">
+    <div class="container grid gap-10 ">
+      <div class="section-title text-white text-center">
+          <span class="font-bold">Events</span>
+          <h2 class="text-6xl font-semibold">Upcoming Events</h2>
+      </div>
+      <div class="event-box-item bg-white rounded-lg ">
+          <div class="flex items-center flex-col gap-2 lg:gap-0 lg:flex-row items-center justify-between p-6">  
+                  <div class="event-image">
+                      <a href="#"><img src="./Resources/event-1.png" alt="image"></a>
+                  </div>
+  
+              <div>
+                  <div class="event-content space-y-4">
+                      <h3 class="text-2xl font-bold">
+                          <a href="#">Annual Cultural Programme</a>
+                      </h3>
+                      <ul class="event-list font-semibold">
+                          <li><i class="ri-time-line text-orange-600" ></i>
+                              8:00 AM - 10:00 PM
+                          </li>
+                          <li>
+                              <i class=" ri-map-pin-line text-orange-600"></i>
+                              New York 56 Glassford Street Glasgow
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class=" text-orange-600 text-center pr-20">
+                  <div class="event-date text-center">
+                      <h4 class=" text-8xl font-bold">12</h4>
+                      <span class="font-semibold text-lg">September</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="event-box-item bg-white rounded-lg">
+          <div class="flex items-center flex-col gap-2 lg:gap-0 lg:flex-row justify-between p-6">  
+                  <div class="event-image">
+                      <a href="#"><img src="./Resources/event-2.png" alt="image"></a>
+                  </div>
+  
+              <div>
+                  <div class="event-content space-y-4">
+                      <h3 class="text-2xl font-bold">
+                          <a href="#">World Kids Day </a>
+                      </h3>
+                      <ul class="event-list font-semibold">
+                          <li><i class="ri-time-line text-orange-600" ></i>
+                              8:00 AM - 10:00 PM
+                          </li>
+                          <li>
+                              <i class=" ri-map-pin-line text-orange-600"></i>
+                              New York 56 Glassford Street Glasgow
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="text-orange-600">
+                  <div class="event-date text-center pr-20 ">
+                      <h4 class="text-8xl font-bold">18</h4>
+                      <span class="font-semibold text-lg">January</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="event-box-item bg-white rounded-lg ">
+          <div class="flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-0 p-6">  
+                  <div class="event-image">
+                      <a href="#"><img src="./Resources/event-3.png" alt="image"></a>
+                  </div>
+  
+              <div>
+                  <div class="event-content space-y-4">
+                      <h3 class="text-2xl font-bold">
+                          <a href="#">World Drawing Day</a>
+                      </h3>
+                      <ul class="event-list font-semibold">
+                          <li><i class="ri-time-line text-orange-600" ></i>
+                              8:00 AM - 10:00 PM
+                          </li>
+                          <li>
+                              <i class=" ri-map-pin-line text-orange-600"></i>
+                              New York 56 Glassford Street Glasgow
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="text-orange-600 ">
+                  <div class="event-date text-center pr-20">
+                      <h4 class="text-8xl font-bold">25</h4>
+                      <span class="font-semibold text-lg">March</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="event-box-item bg-white rounded-lg ">
+          <div class="flex items-center flex-col lg:gap-0 gap-2 justify-between lg:flex-row p-6">  
+                  <div class="event-image">
+                      <a href="#"><img src="./Resources/event-4.png" alt="image"></a>
+                  </div>
+  
+              <div>
+                  <div class="event-content space-y-4">
+                      <h3 class="text-2xl font-bold">
+                          <a href="#">Teacher Day</a>
+                      </h3>
+                      <ul class="event-list font-semibold">
+                          <li><i class="ri-time-line text-orange-600" ></i>
+                              8:00 AM - 10:00 PM
+                          </li>
+                          <li>
+                              <i class=" ri-map-pin-line text-orange-600"></i>
+                              New York 56 Glassford Street Glasgow
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class=" text-orange-600 ">
+                  <div class="event-date text-center pr-20">
+                      <h4 class="text-8xl font-bold">30</h4>
+                      <span class="font-semibold text-lg">April</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+  <!-- Sixth-Section -->
+  <section class="h-full w-full" id="Latest-News">
+      <div class="wrapper gap-2  flex flex-col items-center p-20">
+        <h3 class="font-semibold">News an blog</h3>
+        <h1 class="text-4xl font-semibold">Latest News</h1>
+        <div class="card-container mt-8 flex flex-wrap lg:flex-nowrap items-center justify-center gap-6 ">
+          <div class="box-1 lg:w-[22rem] group overflow-hidden rounded-xl bg-pink-100">
+            <div class=" overflow-hidden">
+              <img src="./Resources/blog-1.jpg" alt="image" class="group-hover:scale-110 transition-all ease-in-out duration-500 " >
+            </div>
+              <div class="blog-content p-4 space-y-2">
+              <ul class="post-meta flex justify-between font-semibold">
+                  <li>
+                      <span class="text-orange-600">By Admin:</span>
+                      <a href="#">Jack John</a>
+                  </li>
+                  <li>
+                      <span class="text-orange-600">Date:</span>
+                      25 Dec 2022
+                  </li>
+              </ul>
+              <h3 class="text-lg font-bold">
+                  <a href="blog-details.html" class="group-hover:text-orange-600 transition-all ease-in-out duration-500">Red Green Color Blindness</a>
+              </h3>
+              <p class="text-zinc-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+              <div class="blog-btn py-6">
+                  <a href="#" class="default-btn bg-red-600 p-4 rounded-lg text-white">Read More</a>
+              </div>
+          </div>
+          </div>
+          <div class="box-1 lg:w-[22rem] group overflow-hidden rounded-xl bg-pink-100">
+            <div class="overflow-hidden">
+              <img src="./Resources/blog-2.jpg" alt="image" class="group-hover:scale-110 transition-all ease-in-out duration-500" >
+            </div>
+            <div class="blog-content p-4 space-y-2">
+              <ul class="post-meta flex justify-between font-semibold">
+                  <li>
+                      <span class="text-orange-600">By Admin:</span>
+                      <a href="#">Glims Bond</a>
+                  </li>
+                  <li>
+                      <span class="text-orange-600">Date:</span>
+                      25 Dec 2022
+                  </li>
+              </ul>
+              <h3 class=" text-lg font-bold">
+                  <a href="blog-details.html" class="group-hover:text-orange-600 transition-all ease-in-out duration-500">8 Ways to Learning Lesson</a>
+              </h3>
+              <p class="text-zinc-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+              <div class="blog-btn py-6">
+                  <a href="#" class="default-btn bg-red-600 p-4 rounded-lg text-white">Read More</a>
+              </div>
+          </div>
+          </div>
+          <div class="box-1 lg:w-[22rem] group overflow-hidden rounded-xl bg-pink-100">
+            <div class="overflow-hidden">
+              <img src="./Resources/blog-3.jpg" alt="image" class="group-hover:scale-110 transition-all ease-in-out duration-500" >
+            </div>
+            <div class="blog-content p-4 space-y-2">
+              <ul class="post-meta flex justify-between font-semibold">
+                  <li>
+                      <span class="text-orange-600">By Admin:</span>
+                      <a href="#">Smith Broke</a>
+                  </li>
+                  <li>
+                      <span class="text-orange-600">Date:</span>
+                      27 Dec 2022
+                  </li>
+              </ul>
+              <h3 class="text-lg font-bold">
+                  <a href="blog-details.html" class="group-hover:text-orange-600 transition-all ease-in-out duration-500">Session With Activities</a>
+              </h3>
+              <p class="text-zinc-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="blog-btn py-6">
+                  <a href="#" class="default-btn bg-red-600 p-4 rounded-lg text-white">Read More</a>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Footer -->
+  <Footer class="min-h-[80vh] w-full relative bg-[url(./Resorces/footer-bg.jpg)] bg-center bg-cover" id="footer">
+  <div class="absolute h-full w-full content-'' bg-black opacity-90 flex items-center justify-center">
+    <div class=" container opacity-100 z-10 flex-wrap lg:flex-nowrap text-white justify-between flex">
+      <div class="w-52 grid gap-4">
+        <p class="text-4xl font-bold">Ketan</p>
+        <p class="text-sm leading-6 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolor ea obcaecati id quidem, veritatis enim inventore. corporis illo soluta?</p>
+        <ul
+          class=" flex gap-4 cursor-pointer">
+          <li><i class="ri-facebook-circle-fill bg-orange-600 text-white p-2 rounded-full"></i></li>
+          <li><i class="ri-instagram-fill bg-orange-600 text-white p-2 rounded-full"></i></li>
+          <li><i class="ri-twitter-fill bg-orange-600 text-white p-2 rounded-full"></i></li>
+          <li><i class="ri-linkedin-fill bg-orange-600 text-white p-2 rounded-full"></i></li>
+        </ul>
+      </div>
+      <div class="min-w-52 flex flex-col gap-4 ">
+        <p class="font-bold text-2xl border-b-2 border-orange-600">Contact Us</p>
+        <div class="contact-box flex items-center gap-2 font-bold">
+          <i class="ri-phone-fill ri-xl text-orange-600"></i> 
+          <div class="text-box">
+            <p>Phone</p>
+            <p class="font-semibold">8700577916</p>
+          </div>
+        </div>
+        <div class="contact-box flex items-center gap-2 font-bold">
+          <i class="ri-mail-line ri-xl text-orange-600"></i> 
+          <div class="text-box">
+            <p>Email</p>
+            <p class="font-semibold">Lokeshkumarsingh108gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-box flex items-center gap-2 font-bold">
+          <i class="ri-map-pin-line ri-xl text-orange-600"></i> 
+          <div class="text-box">
+            <p>Address</p>
+            <p class="font-semibold">Mahavir Enclave, New-Delhi</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-52 grid gap-4">
+        <p class="text-2xl font-bold border-b-2 border-orange-600">Activities</p>
+        <p class="font-semibold">Math Olympaid</p>
+        <p class="font-semibold">Art Competition</p>
+        <p class="font-semibold">English Novels</p>
+        <p class="font-semibold">Teacher Day</p>
+        <p class="font-semibold">World Kids Day</p>
+      </div>
+    </div>
+  </div>
+</Footer>
+<Footer>
+  <h1 class="text-white p-10 bg-[#091629] text-center">Copyright @2024 Ketan. All Rights Reserved by <span class="text-orange-600 font-bold">Lokesh Kumar Singh</span> </h1>
+  </Footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
