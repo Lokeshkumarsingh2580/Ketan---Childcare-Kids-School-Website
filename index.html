@@ -40,18 +40,18 @@
     </div>
   </nav>
   <!-- Home Container -->
-  <main class="flex flex-col lg:flex-row lg:flex h-full w-full lg:overflow-hidden bg-[#f1e7ffff] justify-center" >
+  <main class="flex flex-col relative lg:flex-row lg:flex h-full w-full lg:overflow-hidden bg-[#f1e7ffff] justify-center" >
     <div
-      class="hero flex relative items-center w-full flex-col  h-full ">
+      class="hero justify-center flex mb-4 items-center h-full w-full  flex-col h-full ">
       <div class="img hidden md:block">
-        <img src="./Resources/banner-shape-1.png" alt="Image-1" class="absolute top-[30px] animate-bounce left-0 w-20" />
-        <img src="./Resources/banner-shape-2.png" alt="Image-2" class="absolute top-[30px] right-0 w-20 animate-bounce" />
-        <img src="./Resources/banner-shape-3.png" alt="Image-3" class="absolute w-20 animate-bounce bottom-0 left-0 z-10" />
-        <img src="./Resources/banner-shape-4.png" alt="Image-4" class="absolute bottom-[-118px]  right-0 w-20" />
+        <img src="./Resources/banner-shape-1.png" alt="Hen" class="absolute top-[60px] animate-bounce left-10 w-20" />
+        <img src="./Resources/banner-shape-2.png" alt="Dots" class="absolute top-[40px] left-[880px] w-20 animate-bounce" />
+        <img src="./Resources/banner-shape-3.png" alt="Bee" class="absolute w-20 animate-bounce bottom-4 left-10 z-10" />
+        <img src="./Resources/banner-shape-4.png" alt="Bird" class="absolute bottom-2 lg:left-[650px] xl:left-[880px] w-20" />
       </div>
-      <div class="flex flex-col h-full items-center justify-center lg:items-start p-8 lg:pt-28 lg:px-28 gap-4">
+      <div class="flex flex-col items-center justify-center lg:items-start p-8 lg:pt-28 lg:px-28 xl:mt-28 h-full w-full gap-4">
         <p class="text-red-500 font-bold">Play, Learn and Grow</p>
-        <h3 class="text-[1.6rem] lg:text-[2rem] text-[#1b0238] font-bold">
+        <h3 class="text-[1.4rem] lg:text-[2rem] xl:text-4xl text-[#1b0238] font-bold">
           Empowering Student Knowledge
         </h3>
         <p class="text-center lg:text-start lg:text-sm">
@@ -61,24 +61,24 @@
         reprehenderit dolorem eius.
       </p>
     </div>
-      <div class="button flex gap-4 items-center  lg:justify-start  justify-center w-full lg:px-28  mb-4 lg:mb-0">
-        <button class="p-4 text-sm  rounded-xl bg-red-600 hover:bg-orange-600 transition-all ease-in-out duration-300 text-white">
-         <a href="#who-we-are"> Learn More</a>
+      <div class="button flex gap-4 items-center lg:justify-start justify-center w-full lg:px-28 mb-4 lg:mb-0">
+        <button class="p-4 text-sm rounded-xl bg-red-600 hover:bg-orange-600 transition-all ease-in-out duration-300 text-white">
+         <a href="#who-we-are">Learn More</a>
         </button>
-        <button class="p-4 text-sm hover:bg-orange-600 transition-all ease-in-out duration-300   rounded-xl bg-orange-600 text-white">
+        <button class="p-4 text-sm hover:bg-orange-600 transition-all ease-in-out duration-300 rounded-xl bg-orange-600 text-white">
          <a href="#Latest-News"> Find Out More </a>
         </button>
       </div>
     </div>
-    <div class="circle lg:min-h-[90vh] relative w-full lg:w-[70vw] lg:rounded-l-full lg:bg-[#fef8f8] bg-[#f1e7ffff] flex">
+    <div class="circle min-h-[90vh] relative w-full lg:w-[70vw] lg:rounded-l-full lg:bg-[#fef8f8] bg-[#f1e7ffff] flex">
       <img src="./Resources/education-girl.png" alt="banner_photo" class="lg:absolute bottom-0 right-24 min-w-sm"/>
     </div>
 
-    <img src="./Resources/banner-bg-shape-1.png" alt="cloud" class="lg:absolute lg:bottom-[-70px] lg:left-0 hidden lg:block" />
+    <img src="./Resources/banner-bg-shape-1.png" alt="cloud" class="lg:absolute lg:bottom-[-70px] xl:bottom-[-50px] -translate-y-1 lg:left-0 hidden lg:block" />
   </main>
   <!-- First Section -->
   <section
-    class="flex flex-col top-[30vh] md:top-0 min-[800px]:flex-row p-[2rem] gap-[3rem] items-center justify-center" id="who-we-are">
+    class="flex flex-col top-[30vh] md:top-0 min-[800px]:flex-row p-[3rem] gap-[3rem] items-center justify-center" id="who-we-are">
     <div class="left">
       <img src="./Resources/who-we-are.jpg" alt="section2_img" class="rounded-full object-cover"/>
     </div>
@@ -466,12 +466,12 @@
   </section>
   <!-- Sixth-Section -->
   <section class="h-full w-full" id="Latest-News">
-      <div class="wrapper gap-2  flex flex-col items-center p-20">
+      <div class="wrapper gap-2  flex flex-col items-center p-4 lg:p-20">
         <h3 class="font-semibold">News an blog</h3>
         <h1 class="text-4xl font-semibold">Latest News</h1>
-        <div class="card-container mt-8 flex flex-wrap lg:flex-nowrap items-center justify-center gap-6 ">
+        <div class="card-container mt-8 flex flex-wrap lg:flex-nowrap items-center justify-center gap-12 ">
           <div class="box-1 lg:w-[22rem] group overflow-hidden rounded-xl bg-pink-100">
-            <div class=" overflow-hidden">
+            <div class="overflow-hidden">
               <img src="./Resources/blog-1.jpg" alt="image" class="group-hover:scale-110 transition-all ease-in-out duration-500 " >
             </div>
               <div class="blog-content p-4 space-y-2">
@@ -548,9 +548,9 @@
       </div>
   </section>
   <!-- Footer -->
-  <Footer class="min-h-[80vh] w-full relative bg-[url(./Resorces/footer-bg.jpg)] bg-center bg-cover" id="footer">
-  <div class="absolute h-full w-full content-'' bg-black opacity-90 flex items-center justify-center">
-    <div class=" container opacity-100 z-10 flex-wrap lg:flex-nowrap text-white justify-between flex">
+  <Footer class=" min-h-[80vh] w-full relative bg-[url(./Resources/footer-bg.jpg)] bg-center bg-cover" id="footer">
+  <div class="absolute h-full p-4 w-full content-'' bg-black opacity-90 flex items-center  justify-center">
+    <div class=" container gap-4 opacity-100 z-10 flex-wrap lg:flex-nowrap text-white justify-between flex">
       <div class="w-52 grid gap-4">
         <p class="text-4xl font-bold">Ketan</p>
         <p class="text-sm leading-6 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolor ea obcaecati id quidem, veritatis enim inventore. corporis illo soluta?</p>
